@@ -7,9 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgForComponent implements OnInit {
 
-  constructor() { }
+	pessoas: any[] = [
+		{id: 1, nome:'Monalisa'}, 
+		{id: 2, nome:'Geovane'}, 
+		{id: 3, nome:'Lídia'}, 
+		{id: 4, nome:'José'}
+	]
 
-  ngOnInit() {
-  }
+	meuSave(index:number, pessoa:any) {
+		return pessoa.id
+	}
+
+	atualizar() {
+		this.pessoas = [
+			{id: 1, nome:'Monalisa'}, 
+			{id: 2, nome:'Geovane'}, 
+			{id: 3, nome:'Lídia'}, 
+			{id: 4, nome:'José'},
+			{id: 5, nome:'Cida'}
+		]
+	
+	}
+
+	constructor() { }
+
+  	ngOnInit() {
+  	}
 
 }
