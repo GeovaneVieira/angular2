@@ -18,4 +18,6 @@
 <p *ngIf="cursos.length > 0">Agora temos cursos cadastrado</p>
 <button (click)="addCurso()">Add Novo curso</button>
 
-<p *ngIf="mostrarNome">Com uma variável</p>
+<p *ngIf="mostrarNome">Parágrafo com uma variável</p>
+
+<p [hidden]="getValor()">Parágrafo com hidden</p>

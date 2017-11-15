@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgIfComponent implements OnInit {
 
-	mostrarNome: boolean;
-	cursos: string [] = [];
+	mostrarNome: boolean = true;
 
+	cursos: string [] = [];
 
 	mostrar(): void {
 		this.mostrarNome = !this.mostrarNome;
