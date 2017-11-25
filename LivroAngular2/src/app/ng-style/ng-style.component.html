@@ -12,3 +12,8 @@
 </p>
 <button (click)="mudarTamanho()">Mudar tamanho</button>
 <button (click)="mudarCor()">Mudar cor</button>
+
+<h3>Exercício</h3>
+<p [ngStyle]="{'font-size': '30px'}">Valor fixo na tela</p>
+
+<p [ngStyle]="{'font-size': valorFonte}">Método da classe do componente sendo referenciado no template</p>
